@@ -47,25 +47,21 @@ public class Sewa {
     public double hitungTotalBiaya() {
         return handphone.getHargaSewaPerHari() * lamaSewaHari;
     }
- 
-    // POLYMORPHISM: Method Overloading
-    // Nama method SAMA (hitungTotalBiaya) tapi parameter BEDA -> ini overloading
+
     public double hitungTotalBiaya(double diskonPersen) {
         double subtotal = hitungTotalBiaya();
         double potongan = subtotal * (diskonPersen / 100);
         return subtotal - potongan;
     }
  
-    // CONDITION (if-else): menentukan besar diskon otomatis
-    // berdasarkan lama sewa
     public double getDiskonOtomatis() {
         double diskon;
         if (lamaSewaHari >= 7) {
-            diskon = 15; // sewa 1 minggu ke atas, diskon 15%
+            diskon = 15; 
         } else if (lamaSewaHari >= 3) {
-            diskon = 5;  // sewa 3-6 hari, diskon 5%
+            diskon = 5; 
         } else {
-            diskon = 0;  // sewa kurang dari 3 hari, tanpa diskon
+            diskon = 0;  
         }
         return diskon;
     }
@@ -77,9 +73,7 @@ public class Sewa {
         pelanggan.tampilkanPelanggan();
         System.out.println("-----------------------------------------");
  
-        // POLYMORPHISM sungguhan: cukup panggil tampilkanInformasi()
-        // Java otomatis memilih versi Smartphone / FeaturePhone
-        // sesuai objek aslinya, tanpa perlu instanceof/casting manual.
+
         handphone.tampilkanInformasi();
  
         System.out.println("-----------------------------------------");
