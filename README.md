@@ -27,11 +27,42 @@ Fitur utama yang tersedia:
 
 ##  Alur Program
 
-### Cara Menjalankan
->  Jika input/output terasa tidak sinkron di NetBeans, jalankan langsung lewat terminal:
-> ```bash
-> java -cp target/classes com.mycompany.sistemsewahandphone.Main
-> ```
+### 1. Program Dimulai
+Saat <code>Main.java</code> dijalankan, program menyiapkan <code>Scanner</code> untuk membaca input, sekaligus membuat daftar handphone awal berupa <code>List&lt;Handphone&gt;</code> berisi 2 unit contoh yang sudah ada(1 Smartphone, 1 FeaturePhone). Ini dilakukan sekali saja sebelum menu muncul.
+
+### 2. Loop Menu Utama (`do-while`)
+Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belum memilih **4 (Keluar)**. Setiap kali menu tampil, input divalidasi terlebih dahulu (harus angka 1-4) sebelum diproses — jika salah ketik, program tidak berhenti, hanya meminta input ulang.
+
+### 3. Percabangan (`if-else`) Sesuai Pilihan
+
+<table>
+  <tr>
+    <th align="left">Pilihan</th>
+    <th align="left">Yang Terjadi</th>
+  </tr>
+  <tr>
+    <td><b>1. Sewa HP Baru</b></td>
+    <td>Masuk ke <code>prosesSewaBaru()</code> → input nama/KTP/telp → tampilkan daftar HP → pilih HP → input lama sewa → hitung biaya (+ cek diskon otomatis) → cetak nota</td>
+  </tr>
+  <tr>
+    <td><b>2. Lihat Daftar</b></td>
+    <td>Panggil <code>tampilkanDaftarHandphone()</code> → cetak semua HP yang ada di list, tanpa mengubah data apa pun</td>
+  </tr>
+  <tr>
+    <td><b>3. Tambah HP Baru</b></td>
+    <td>Panggil <code>tambahHandphoneBaru()</code> → pilih tipe (Smartphone/FeaturePhone) → isi data sesuai tipenya → HP baru masuk ke <code>daftarHP</code></td>
+  </tr>
+  <tr>
+    <td><b>4. Keluar</b></td>
+    <td>Cetak pesan penutup, loop berhenti, <code>scanner.close()</code></td>
+  </tr>
+</table>
+
+### 4. Kembali ke Menu (Kecuali Keluar)
+Setelah opsi 1, 2, atau 3 selesai dieksekusi, program otomatis kembali menampilkan menu utama lagi (karena masih berada di dalam loop `do-while`) — pengguna tidak perlu me-restart program untuk melakukan transaksi berikutnya.
+
+### 5. Detail Khusus di dalam "Sewa HP Baru"
+Bagian ini memiliki loop terpisah (`do-while` di dalam `prosesSewaBaru()`), sehingga setelah satu nota tercetak, pengguna langsung ditanya **"sewa lagi? (y/n)"** tanpa harus kembali dulu ke menu 1-4. Di titik inilah **polymorphism** terjadi: pemanggilan `hpDipilih.tampilkanInformasi()` otomatis mencetak versi Smartphone atau FeaturePhone tergantung objek aslinya, tanpa program perlu memeriksa tipenya secara manual.
 
 ### Alur Menu
 
