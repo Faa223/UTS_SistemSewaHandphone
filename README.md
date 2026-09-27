@@ -9,6 +9,27 @@ dibuat menggunakan konsep **OOP**.
 
 ---
 
+<table>
+  <tr>
+    <td width="150"><b>Nama</b></td>
+    <td>: Rifaa Zainul Arifin</td>
+  </tr>
+  <tr>
+    <td><b>NIM</b></td>
+    <td>: 2509116092</td>
+  </tr>
+  <tr>
+    <td><b>Kelas</b></td>
+    <td>: C</td>
+  </tr>
+  <tr>
+    <td><b>Mata Kuliah</b></td>
+    <td>: Pemrograman Berorientasi Objek</td>
+  </tr>
+</table>
+
+
+
 ##  Deskripsi Proyek
 
 **Sistem Sewa Handphone** adalah aplikasi berbasis *console* yang dibuat menggunakan
