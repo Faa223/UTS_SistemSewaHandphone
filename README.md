@@ -62,7 +62,7 @@ Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belu
 Setelah opsi 1, 2, atau 3 selesai dieksekusi, program otomatis kembali menampilkan menu utama lagi (karena masih berada di dalam loop `do-while`) — pengguna tidak perlu me-restart program untuk melakukan transaksi berikutnya.
 
 ### 5. Detail Khusus di dalam "Sewa HP Baru"
-Bagian ini memiliki loop terpisah (`do-while` di dalam `prosesSewaBaru()`), sehingga setelah satu nota tercetak, pengguna langsung ditanya **"sewa lagi? (y/n)"** tanpa harus kembali dulu ke menu 1-4. Di titik inilah **polymorphism** terjadi: pemanggilan `hpDipilih.tampilkanInformasi()` otomatis mencetak versi Smartphone atau FeaturePhone tergantung objek aslinya, tanpa program perlu memeriksa tipenya secara manual.
+Pada bagian ini memiliki loop terpisah (`do-while` di dalam `prosesSewaBaru()`), sehingga sesudah satu nota tercetak, pengguna langsung ditanya **"sewa lagi? (y/n)"** tanpa harus kembali dulu ke menu 1-4. Inilah kegunaan **polymorphism**: pemanggilan `hpDipilih.tampilkanInformasi()` otomatis mencetak versi Smartphone atau FeaturePhone tergantung objek aslinya, tanpa program perlu memeriksa tipenya secara manual.
 
 ### Alur Menu
 
