@@ -32,7 +32,6 @@ public class Handphone {
     }
  
     // Method ini akan di-override oleh subclass (Smartphone & FeaturePhone)
-    // Inilah dasar dari POLYMORPHISM (Method Overriding)
     public void tampilkanInformasi() {
         System.out.println("Merk HP           : " + merk);
         System.out.println("Tipe HP           : " + tipe);
