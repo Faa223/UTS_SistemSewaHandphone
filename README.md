@@ -42,7 +42,7 @@ Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belu
   </tr>
   <tr>
     <td><b>1. Sewa HP Baru</b></td>
-    <td>Masuk ke <code>prosesSewaBaru()</code> → input nama/KTP/telp → tampilkan daftar HP → pilih HP → input lama sewa → hitung biaya (+ cek diskon otomatis) → cetak nota</td>
+    <td>Masuk ke <code>prosesSewaBaru()</code> → input nama/KTP/telp → tampilkan daftar HP → pilih HP → input lama sewa → hitung biaya (+ cek diskon otomatis jika menyewa lebih dari 7 hari) → cetak nota</td>
   </tr>
   <tr>
     <td><b>2. Lihat Daftar</b></td>
