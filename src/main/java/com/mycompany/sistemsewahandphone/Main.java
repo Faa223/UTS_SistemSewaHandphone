@@ -38,7 +38,7 @@ public class Main {
             System.out.println("=========================================");
             System.out.println("1. Sewa Handphone Baru");
             System.out.println("2. Lihat Daftar Handphone Tersedia");
-            System.out.println("3. Tambah Handphone Baru (Custom)");
+            System.out.println("3. Tambah Handphone Baru");
             System.out.println("4. Keluar");
  
             pilihanMenu = 0;
@@ -141,7 +141,7 @@ public class Main {
  
             int pilihanOS = 0;
             while (pilihanOS < 1 || pilihanOS > 3) {
-                System.out.print("Pilihan Anda (1/2/3): ");
+                System.out.print("Pilihan Anda (1-2): ");
                 if (scanner.hasNextInt()) {
                     pilihanOS = scanner.nextInt();
                     if (pilihanOS < 1 || pilihanOS > 3) {
