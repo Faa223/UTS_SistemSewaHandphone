@@ -131,7 +131,7 @@ Menampilkan pesan penutup dan menghentikan program.
     <td>
       <b>Proses Sewa Handphone</b><br/>
       Pengguna mengisi data pelanggan, memilih handphone, memasukkan lama sewa,
-      lalu sistem mencetak nota sewa lengkap dengan hitungan diskon jika menyewa lebih dari 7 hari
+      lalu sistem mencetak nota sewa lengkap dengan hitungan diskon. Diskon otomatis digunakan jika menyewa Handphone lebih dari 7 hari
     </td>
   </tr>
   <tr>
