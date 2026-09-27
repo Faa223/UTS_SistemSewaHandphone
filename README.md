@@ -31,7 +31,7 @@ Fitur utama yang dipakai yaitu:
 Saat <code>Main.java</code> dijalankan, program menyiapkan <code>Scanner</code> untuk membaca input, sekaligus membuat daftar handphone awal berupa <code>List&lt;Handphone&gt;</code> berisi 2 unit contoh yang sudah ada(1 Smartphone, 1 FeaturePhone). Ini dilakukan sekali saja sebelum menu muncul.
 
 ### 2. Loop Menu Utama (`do-while`)
-Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belum memilih **4 (Keluar)**. Setiap kali menu tampil, input divalidasi terlebih dahulu (harus angka 1-4) sebelum diproses — jika salah ketik, program tidak berhenti, hanya meminta input ulang.
+Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belum memilih **4 (Keluar)**. Setiap kali menu tampil, input divalidasi terlebih dahulu (harus angka 1-4) sebelum diproses - jika salah ketik, program tidak berhenti, hanya meminta input ulang.
 
 ### 3. Percabangan (`if-else`) Sesuai Pilihan
 
@@ -42,7 +42,7 @@ Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belu
   </tr>
   <tr>
     <td><b>1. Sewa HP Baru</b></td>
-    <td>Masuk ke <code>prosesSewaBaru()</code> → input nama/KTP/telp → tampilkan daftar HP → pilih HP → input lama sewa → hitung biaya (+ cek diskon otomatis jika menyewa lebih dari 7 hari) → cetak nota</td>
+    <td>Masuk ke <code>prosesSewaBaru()</code> -> input nama/KTP/telp -> tampilkan daftar HP -> pilih HP -> input lama sewa -> hitung biaya (+ cek diskon otomatis 5% jika menyewa lebih dari 3 hari dan diskon 15% otomatis jika menyewa lebih dari 7 hari) -> cetak nota</td>
   </tr>
   <tr>
     <td><b>2. Lihat Daftar</b></td>
@@ -50,7 +50,7 @@ Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belu
   </tr>
   <tr>
     <td><b>3. Tambah HP Baru</b></td>
-    <td>Panggil <code>tambahHandphoneBaru()</code> → pilih tipe (Smartphone/FeaturePhone) → isi data sesuai tipenya → HP baru masuk ke <code>daftarHP</code></td>
+    <td>Panggil <code>tambahHandphoneBaru()</code> -> pilih tipe (Smartphone/FeaturePhone) -> isi data sesuai tipenya -> HP baru masuk ke <code>daftarHP</code></td>
   </tr>
   <tr>
     <td><b>4. Keluar</b></td>
