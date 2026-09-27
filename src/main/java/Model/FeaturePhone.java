@@ -27,10 +27,9 @@ public class FeaturePhone extends Handphone {
     }
  
     // POLYMORPHISM: Method Overriding
-    // Nama & signature method SAMA dengan induk (Handphone), tapi isinya beda
     @Override
     public void tampilkanInformasi() {
-        super.tampilkanInformasi(); // panggil versi induk dulu
+        super.tampilkanInformasi(); 
         System.out.println("Kapasitas Baterai : " + kapasitasBaterai + " mAh");
         // CONDITION (if-else) dalam bentuk ternary
         System.out.println("Fitur Radio FM    : " + (adaRadioFM ? "Tersedia" : "Tidak Ada"));
