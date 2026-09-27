@@ -13,9 +13,9 @@ dibuat menggunakan konsep **OOP**.
 
 **Sistem Sewa Handphone** adalah aplikasi berbasis *console* yang dibuat menggunakan
 Java untuk mengelola transaksi penyewaan handphone. Program ini mendukung dua kategori handphone,
-yaitu **Smartphone** dan **FeaturePhone**, yang masing-masing memiliki atribut khusus berbeda.
+yaitu **Smartphone** dan **FeaturePhone**, yang dimana masing-masing memiliki atribut khusus berbeda.
 
-Fitur utama yang tersedia:
+Fitur utama yang dipakai yaitu:
 
 -  Menyewa handphone dari daftar yang tersedia
 -  Melihat daftar seluruh handphone yang bisa disewa
