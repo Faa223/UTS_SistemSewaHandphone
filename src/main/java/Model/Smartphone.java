@@ -27,7 +27,6 @@ public class Smartphone extends Handphone {
     }
  
     // POLYMORPHISM: Method Overriding
-    // Nama & signature method SAMA dengan induk (Handphone), tapi isinya beda
     @Override
     public void tampilkanInformasi() {
         super.tampilkanInformasi(); // panggil versi induk dulu
