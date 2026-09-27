@@ -12,59 +12,87 @@ public class Sewa {
     private Pelanggan pelanggan;
     private Handphone handphone;
     private int lamaSewaHari;
-
+ 
     public Sewa(Pelanggan pelanggan, Handphone handphone, int lamaSewaHari) {
         this.pelanggan = pelanggan;
         this.handphone = handphone;
         this.lamaSewaHari = lamaSewaHari;
     }
-
+ 
     public Pelanggan getPelanggan() {
         return pelanggan;
     }
-
+ 
     public void setPelanggan(Pelanggan pelanggan) {
         this.pelanggan = pelanggan;
     }
-
+ 
     public Handphone getHandphone() {
         return handphone;
     }
-
+ 
     public void setHandphone(Handphone handphone) {
         this.handphone = handphone;
     }
-
+ 
     public int getLamaSewaHari() {
         return lamaSewaHari;
     }
-
+ 
     public void setLamaSewaHari(int lamaSewaHari) {
         this.lamaSewaHari = lamaSewaHari;
     }
-
+ 
+    // Method awal: hitung total biaya tanpa diskon
     public double hitungTotalBiaya() {
         return handphone.getHargaSewaPerHari() * lamaSewaHari;
     }
-
+ 
+    // POLYMORPHISM: Method Overloading
+    // Nama method SAMA (hitungTotalBiaya) tapi parameter BEDA -> ini overloading
+    public double hitungTotalBiaya(double diskonPersen) {
+        double subtotal = hitungTotalBiaya();
+        double potongan = subtotal * (diskonPersen / 100);
+        return subtotal - potongan;
+    }
+ 
+    // CONDITION (if-else): menentukan besar diskon otomatis
+    // berdasarkan lama sewa
+    public double getDiskonOtomatis() {
+        double diskon;
+        if (lamaSewaHari >= 7) {
+            diskon = 15; // sewa 1 minggu ke atas, diskon 15%
+        } else if (lamaSewaHari >= 3) {
+            diskon = 5;  // sewa 3-6 hari, diskon 5%
+        } else {
+            diskon = 0;  // sewa kurang dari 3 hari, tanpa diskon
+        }
+        return diskon;
+    }
+ 
     public void cetakNotaSewa() {
         System.out.println("\n=========================================");
         System.out.println("          NOTA SEWA HANDPHONE            ");
         System.out.println("=========================================");
         pelanggan.tampilkanPelanggan();
         System.out.println("-----------------------------------------");
-
-        if (handphone instanceof Smartphone) {
-            ((Smartphone) handphone).tampilkanInformasiSmartphone();
-        } else if (handphone instanceof FeaturePhone) {
-            ((FeaturePhone) handphone).tampilkanInformasiFeaturePhone();
-        } else {
-            handphone.tampilkanInformasi();
-        }
-
+ 
+        // POLYMORPHISM sungguhan: cukup panggil tampilkanInformasi()
+        // Java otomatis memilih versi Smartphone / FeaturePhone
+        // sesuai objek aslinya, tanpa perlu instanceof/casting manual.
+        handphone.tampilkanInformasi();
+ 
         System.out.println("-----------------------------------------");
         System.out.println("Lama Sewa         : " + lamaSewaHari + " Hari");
-        System.out.println("Total Biaya Sewa  : Rp" + hitungTotalBiaya());
+        System.out.println("Subtotal Sewa     : Rp" + hitungTotalBiaya());
+ 
+        double diskon = getDiskonOtomatis();
+        if (diskon > 0) {
+            System.out.println("Diskon            : " + diskon + "%");
+            System.out.println("Total Biaya Sewa  : Rp" + hitungTotalBiaya(diskon));
+        } else {
+            System.out.println("Total Biaya Sewa  : Rp" + hitungTotalBiaya());
+        }
         System.out.println("=========================================");
     }
 }

@@ -11,24 +11,28 @@ package Model;
 public class FeaturePhone extends Handphone {
     private int kapasitasBaterai;
     private boolean adaRadioFM;
-
+ 
     public FeaturePhone(String merk, String tipe, double hargaSewaPerHari, int kapasitasBaterai, boolean adaRadioFM) {
         super(merk, tipe, hargaSewaPerHari);
         this.kapasitasBaterai = kapasitasBaterai;
         this.adaRadioFM = adaRadioFM;
     }
-
+ 
     public int getKapasitasBaterai() {
         return kapasitasBaterai;
     }
-
+ 
     public boolean isAdaRadioFM() {
         return adaRadioFM;
     }
-
-    public void tampilkanInformasiFeaturePhone() {
-        super.tampilkanInformasi();
+ 
+    // POLYMORPHISM: Method Overriding
+    // Nama & signature method SAMA dengan induk (Handphone), tapi isinya beda
+    @Override
+    public void tampilkanInformasi() {
+        super.tampilkanInformasi(); // panggil versi induk dulu
         System.out.println("Kapasitas Baterai : " + kapasitasBaterai + " mAh");
+        // CONDITION (if-else) dalam bentuk ternary
         System.out.println("Fitur Radio FM    : " + (adaRadioFM ? "Tersedia" : "Tidak Ada"));
     }
 }
