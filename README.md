@@ -94,7 +94,7 @@ Menampilkan seluruh handphone yang bisa disewa beserta merk, tipe, dan harga sew
 1. Pengguna memilih tipe handphone: **Smartphone** atau **FeaturePhone**.
 2. Mengisi data umum: merk, tipe, harga sewa per hari.
 3. Mengisi data khusus sesuai tipe yang dipilih:
-   - **Smartphone** → pilih Sistem Operasi (iOS/Android/HarmonyOS) & kapasitas RAM.
+   - **Smartphone** → pilih Sistem Operasi (iOS/Android) & kapasitas RAM.
    - **FeaturePhone** → kapasitas baterai & ketersediaan Radio FM.
 4. Handphone baru langsung masuk ke daftar dan bisa langsung disewa.
 
