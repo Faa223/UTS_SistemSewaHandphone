@@ -28,7 +28,7 @@ Fitur utama yang dipakai yaitu:
 ##  Alur Program
 
 ### 1. Program Dimulai
-Saat <code>Main.java</code> dijalankan, program menyiapkan <code>Scanner</code> untuk membaca input, sekaligus membuat daftar handphone awal berupa <code>List&lt;Handphone&gt;</code> berisi 2 unit contoh yang sudah ada(1 Smartphone, 1 FeaturePhone). Ini dilakukan sekali saja sebelum menu muncul.
+Saat <code>Main.java</code> dijalankan, program membuat daftar handphone awal berupa <code>List&lt;Handphone&gt;</code> berisi 2 unit, contoh (1 Smartphone, 1 FeaturePhone). Ini dilakukan sekali saja sebelum menu muncul.
 
 ### 2. Loop Menu Utama (`do-while`)
 Program masuk ke perulangan yang terus menampilkan menu 1-4 selama pengguna belum memilih **4 (Keluar)**. Setiap kali menu tampil, input divalidasi terlebih dahulu (harus angka 1-4) sebelum diproses - jika salah ketik, program tidak berhenti, hanya meminta input ulang.
