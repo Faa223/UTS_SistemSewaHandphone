@@ -1,17 +1,17 @@
 <div align="center">
 
-# 📱 Sistem Sewa Handphone
+#  Sistem Sewa Handphone
 
 Aplikasi console berbasis Java untuk mengelola transaksi penyewaan handphone,
-dibuat menggunakan konsep **OOP (Object-Oriented Programming)**.
+dibuat menggunakan konsep **OOP**.
 
 </div>
 
 ---
 
-## 📖 Deskripsi Proyek
+##  Deskripsi Proyek
 
-**Sistem Sewa Handphone** adalah aplikasi berbasis *console* (command line) yang dibuat menggunakan
+**Sistem Sewa Handphone** adalah aplikasi berbasis *console* yang dibuat menggunakan
 Java untuk mengelola transaksi penyewaan handphone. Program ini mendukung dua kategori handphone,
 yaitu **Smartphone** dan **FeaturePhone**, yang masing-masing memiliki atribut khusus berbeda.
 
@@ -20,7 +20,7 @@ Fitur utama yang tersedia:
 -  Menyewa handphone dari daftar yang tersedia
 -  Melihat daftar seluruh handphone yang bisa disewa
 -  Menambahkan unit handphone baru secara *custom* (Smartphone maupun FeaturePhone)
--  Perhitungan **diskon otomatis** berdasarkan lama sewa
+-  Perhitungan **diskon otomatis** jika menyewa lebih dari 7 hari
 -  Validasi input di setiap tahap (anti *error* saat user salah ketik)
 
 <br/>
@@ -134,12 +134,10 @@ Menampilkan pesan penutup dan menghentikan program.
 
 ##  Penjelasan Output 
 
-> Ganti path gambar di bawah (`docs/...png`) dengan screenshot hasil run program milikmu sendiri.
-
 <table>
   <tr>
     <td width="50%">
-      <img src="docs/screenshot-menu-utama.png" alt="Menu Utama" width="100%"/>
+      <img width="496" height="231" alt="Screenshot 2026-09-27 171622" src="https://github.com/user-attachments/assets/88fc8404-49b3-4800-8837-98fd0ca916cd" />
     </td>
     <td>
       <b>Menu Utama</b><br/>
@@ -149,22 +147,22 @@ Menampilkan pesan penutup dan menghentikan program.
   </tr>
   <tr>
     <td width="50%">
-      <img src="docs/screenshot-sewa-hp.png" alt="Proses Sewa Handphone" width="100%"/>
+      <img width="566" height="699" alt="Screenshot 2026-09-27 170838" src="https://github.com/user-attachments/assets/0887b481-553c-4600-ba20-44b9a7dd6572" />
+      <img width="409" height="565" alt="Screenshot 2026-09-27 170810" src="https://github.com/user-attachments/assets/b1fe0396-7487-4ddc-95e6-9ed8e501bbfa" />
     </td>
     <td>
       <b>Proses Sewa Handphone</b><br/>
       Pengguna mengisi data pelanggan, memilih handphone, memasukkan lama sewa,
-      lalu sistem mencetak nota sewa lengkap dengan perhitungan diskon otomatis.
+      lalu sistem mencetak nota sewa lengkap dengan hitungan diskon jika menyewa lebih dari 7 hari
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="docs/screenshot-tambah-hp.png" alt="Tambah Handphone Baru" width="100%"/>
+      <img width="602" height="583" alt="Screenshot 2026-09-27 170627" src="https://github.com/user-attachments/assets/e5a1b8c1-ae87-4cd6-a773-75c0bdb43366" />
     </td>
     <td>
-      <b>Tambah Handphone Baru (Custom)</b><br/>
-      Pengguna menambahkan handphone baru secara custom dengan memilih tipe
-      dan mengisi data spesifik sesuai tipe tersebut.
+      <b>Tambah Handphone Baru </b><br/>
+      Pengguna menambahkan handphone baru dengan memilih terlebih dahulu Handphone yang mau ditambahkan contohnya seperti pada Gambar yang saya punya saya memilih Smartphone, setelah itu memilih tipe dan mengisi Ram yang di inginkan.
     </td>
   </tr>
 </table>
@@ -172,7 +170,5 @@ Menampilkan pesan penutup dan menghentikan program.
 <br/>
 
 <div align="center">
-
-Dibuat sebagai tugas mata kuliah **Pemrograman Berorientasi Objek (PBO)**
 
 </div>
