@@ -25,62 +25,9 @@ Fitur utama yang tersedia:
 
 <br/>
 
-##  Struktur Proyek
-
-```
-SistemSewaHandphone/
-├── src/main/java/
-│   ├── Model/
-│   │   ├── Handphone.java        # Superclass / induk
-│   │   ├── Smartphone.java       # Subclass -> extends Handphone
-│   │   ├── FeaturePhone.java     # Subclass -> extends Handphone
-│   │   ├── Pelanggan.java        # Data pelanggan
-│   │   └── Sewa.java             # Logika transaksi & perhitungan biaya
-│   └── com/mycompany/sistemsewahandphone/
-│       └── Main.java             # Entry point program (menu utama)
-└── README.md
-```
-
-<br/>
-
-##  Konsep OOP yang Diterapkan
-
-<table>
-  <tr>
-    <th align="left">Konsep</th>
-    <th align="left">Penerapan di Kode</th>
-  </tr>
-  <tr>
-    <td><b>Inheritance</b></td>
-    <td><code>Smartphone</code> dan <code>FeaturePhone</code> sama-sama <code>extends Handphone</code></td>
-  </tr>
-  <tr>
-    <td><b>Polymorphism (Overriding)</b></td>
-    <td><code>tampilkanInformasi()</code> di-override di <code>Smartphone</code> & <code>FeaturePhone</code>, dipanggil secara polymorphic dari <code>Sewa</code></td>
-  </tr>
-  <tr>
-    <td><b>Polymorphism (Overloading)</b></td>
-    <td><code>hitungTotalBiaya()</code> vs <code>hitungTotalBiaya(double diskonPersen)</code> di class <code>Sewa</code></td>
-  </tr>
-  <tr>
-    <td><b>Condition (if-else)</b></td>
-    <td>Validasi input & logika diskon otomatis (<code>getDiskonOtomatis()</code>)</td>
-  </tr>
-  <tr>
-    <td><b>Looping</b></td>
-    <td><code>do-while</code> untuk menu utama & transaksi, <code>while</code> untuk validasi setiap input</td>
-  </tr>
-</table>
-
-<br/>
-
 ##  Alur Program
 
 ### Cara Menjalankan
-1. Buka project di **Apache NetBeans**.
-2. Klik kanan project → **Run** (atau tekan `F6`).
-3. Menu utama akan langsung tampil di jendela Output.
-
 >  Jika input/output terasa tidak sinkron di NetBeans, jalankan langsung lewat terminal:
 > ```bash
 > java -cp target/classes com.mycompany.sistemsewahandphone.Main
